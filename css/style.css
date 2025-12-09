@@ -124,3 +124,117 @@ h2 {
     flex: 1;
     text-align: center;
 }
+
+.cv-content hr {
+    border: none;
+    border-top: 1px solid #333333; 
+    width: 100%;                   
+    margin: 6px 0 12px;
+    opacity: 0.2;
+}
+
+.cv-sidebar {
+    width: 30%;
+    background-color: #e3e3e3;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.cv-sidebar .bloc-competences ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cv-sidebar .bloc-competences li {
+    display: flex;                  
+    justify-content: space-between; 
+    align-items: center;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 0px;
+    font-weight: 700;
+}
+
+.cv-sidebar .bloc-competences .stars {
+    color: #17abb3;
+    font-size: 0.9rem;
+    margin-left: 10px; 
+    white-space: nowrap; 
+}
+
+.cv-sidebar .bloc-langues ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cv-sidebar .bloc-langues li {
+    display: flex;                  
+    justify-content: space-between; 
+    align-items: center;
+    margin-bottom: 6px;
+    position: relative;            
+}
+
+.cv-sidebar .bloc-langues .lang-name {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.cv-sidebar .bloc-interets ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cv-sidebar .bloc-interets li {
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+    position: relative;
+    padding-left: 14px;
+}
+
+.cv-sidebar .bloc-interets li::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #17abb3; /* ton bleu/turquoise */
+    position: absolute;
+    left: 0;
+    top: 6px; /* centre verticalement */
+}
+
+
+.cv-sidebar .bloc-qualites ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cv-sidebar .bloc-qualites li {
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+    position: relative;
+    padding-left: 14px;
+}
+
+.cv-sidebar .bloc-qualites li::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #17abb3; 
+    position: absolute;
+    left: 0;
+    top: 6px; 
+}
+
+.cv-sidebar hr {
+    border: none;
+    border-top: 1px solid #333333; /* turquoise de ta palette */
+    width: 100%;                   /* barre courte sous le titre */
+    margin: 6px 0 12px;
+    opacity: 0.2;
+}
