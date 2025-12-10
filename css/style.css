@@ -31,7 +31,9 @@ body {
     margin: 40px auto;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Lato', sans-serif;
 }
 
@@ -64,8 +66,8 @@ h2 {
 
 .cv-header-inner {
     display: flex;
-    align-items: center;   
-    gap: 30px;             
+    align-items: center;
+    gap: 30px;
 }
 
 .cv-identity h1 {
@@ -89,38 +91,328 @@ h2 {
     color: white;
 
     /* active la grille des pictos */
-     display: grid;
-    grid-template-columns: auto auto; /* largeur des colonnes = largeur du contenu */
-    column-gap: 80px;                 /* espace horizontal entre les 2 colonnes */
-    row-gap: 4px;                     /* espace vertical entre les 2 lignes */
-    justify-content: center;          /* centre la petite grille dans le header */
-    width: fit-content;               /* la grille ne prend que la place de son contenu */
-    margin: 0 auto;          
+    display: grid;
+    grid-template-columns: auto auto;
+    /* largeur des colonnes = largeur du contenu */
+    column-gap: 80px;
+    /* espace horizontal entre les 2 colonnes */
+    row-gap: 4px;
+    /* espace vertical entre les 2 lignes */
+    justify-content: center;
+    /* centre la petite grille dans le header */
+    width: fit-content;
+    /* la grille ne prend que la place de son contenu */
+    margin: 0 auto;
 }
 
 .cv-contact li {
-     margin: 0;
+    margin: 0;
     display: flex;
     align-items: center;
-    gap: 4px; 
+    gap: 4px;
 }
 
 .cv-photo {
     width: 130px;
     height: 130px;
-    border-radius: 50%;          
-    overflow: hidden;            
-    border: 4px solid #ffffff;   
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #ffffff;
 }
 
 .cv-photo img {
     width: 100%;
     height: 100%;
-    object-fit: cover;           
-    transform: scale(2);    
+    object-fit: cover;
+    transform: scale(2);
+    cursor: zoom-in;
+    transition: transform 0.25s ease;
+}
+
+.cv-photo img:hover {
+    transform: scale(1.5);               
 }
 
 .cv-identity {
     flex: 1;
     text-align: center;
+}
+
+.cv-content hr {
+    border: none;
+    border-top: 1px solid #333333;
+    width: 100%;
+    margin: 6px 0 12px;
+    opacity: 0.2;
+}
+
+
+/* Partie de gauche */
+
+.cv-sidebar {
+    width: 30%;
+    background-color: #e3e3e3;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cv-sidebar .bloc-competences ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cv-sidebar .bloc-competences li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 0px;
+    font-weight: 700;
+}
+
+.cv-sidebar .bloc-competences .stars {
+    color: #17abb3;
+    font-size: 0.9rem;
+    margin-left: 10px;
+    white-space: nowrap;
+}
+
+.cv-sidebar .bloc-langues ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cv-sidebar .bloc-langues li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+    position: relative;
+}
+
+.cv-sidebar .bloc-langues .lang-name {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.cv-sidebar .bloc-interets ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cv-sidebar .bloc-interets li {
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+    position: relative;
+    padding-left: 14px;
+}
+
+.cv-sidebar .bloc-interets li::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #17abb3;
+    /* ton bleu/turquoise */
+    position: absolute;
+    left: 0;
+    top: 6px;
+    /* centre verticalement */
+}
+
+
+.cv-sidebar .bloc-qualites ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cv-sidebar .bloc-qualites li {
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+    position: relative;
+    padding-left: 14px;
+}
+
+.cv-sidebar .bloc-qualites li::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #17abb3;
+    position: absolute;
+    left: 0;
+    top: 6px;
+}
+
+.cv-sidebar hr {
+    border: none;
+    border-top: 1px solid #333333;
+    width: 100%;
+    margin: 6px 0 12px;
+    opacity: 0.2;
+}
+
+/* Partie de droite */
+
+.bloc-profil p {
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 1.4;
+    font-size: 0.95rem;
+    text-indent: 15px;
+}
+
+.bloc-formations .formation-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bloc-formations .formation-item+.formation-item {
+    margin-top: 20px;
+}
+
+/* .bloc-formations .formation-header {
+    margin-top: 20px;
+} */
+
+.cv-content .bloc-formations .formation-title {
+    font-weight: 700;
+}
+
+.cv-content .bloc-formations .formation-date {
+    color: #17abb3;
+    font-weight: 500;
+}
+
+.cv-content .bloc-formations .formation-location {
+    margin-bottom: 6px;
+    color: #17abb3;
+    font-size: 0.9rem;
+}
+
+.cv-content .bloc-experiences .experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 4px;
+}
+
+.cv-content .bloc-experiences .experience-title {
+    font-weight: 600;
+}
+
+.cv-content .bloc-experiences .experience-date {
+    font-weight: 500;
+    color: #17abb3;
+}
+
+.cv-content .bloc-experiences .experience-location {
+    margin-bottom: 6px;
+    color: #17abb3;
+    font-size: 0.9rem;
+}
+
+.cv-content .bloc-experiences .experience-tasks {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cv-content .bloc-experiences .experience-tasks li {
+    position: relative;
+    padding-left: 16px;
+    margin-bottom: 6px;
+    font-size: 0.8rem;
+}
+
+
+.cv-content .bloc-experiences .experience-tasks li::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #17abb3;
+    position: absolute;
+    left: 0;
+    top: 6px;
+}
+
+.cv-content .bloc-experiences .experience-item+.experience-item {
+    margin-top: 20px;
+}
+
+/* Effets hoover */
+
+/* Effet n°1 : formations / stages / expériences */
+.cv-content .bloc-experiences .experience-item {
+    padding: 8px 12px;
+    border-left: 4px solid transparent;
+    border-radius: 4px;
+    transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+
+/* Effet hover */
+.cv-content .bloc-experiences .experience-item:hover {
+    background-color: #e3e3e3;
+    border-color: #17abb3;
+    cursor: pointer;
+}
+
+.cv-content .bloc-formations .formation-item {
+    padding: 8px 12px;
+    border-left: 4px solid transparent;
+    border-radius: 4px;
+    transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.cv-content .bloc-formations .formation-item:hover {
+    background-color: #e3e3e3;
+    border-color: #17abb3;
+    cursor: pointer;
+}
+
+.cv-footer {
+    background-color: #17abb3;       
+    padding: 25px 0 15px 0;
+    text-align: center;
+    margin-top: 0;
+    color: white;
+}
+
+a {
+    color: inherit;                 
+    text-decoration: none;          
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;                      
+    margin-bottom: 10px;
+}
+
+.footer-icons img {
+    width: 30px;
+    height: 30px;
+    filter: invert(100%);              
+    opacity: 0.9;
+    transition: opacity 0.2s ease;
+    cursor: pointer;
+}
+
+/* effet n°3 */
+.footer-icons img:hover {
+    opacity: 0.7;                      
+}
+
+.footer-update {
+    font-size: 0.9rem;
+    opacity: 0.9;
 }

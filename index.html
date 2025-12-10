@@ -16,16 +16,18 @@
             <div class="cv-header-inner">
 
                 <div class="cv-photo">
-                    <img src="./img/PhotoCV.jpg" alt="Photo de Maxime Gauthier">
+                    <a href="img/PhotoCV.jpg" target="_blank">
+                        <img src="img/PhotoCV.jpg" alt="Photo de Maxime Gauthier">
+                    </a>
                 </div>
 
                 <div class="cv-identity">
                     <h1>Maxime Gauthier</h1>
                     <p class="cv-title">Développeur Web & Marketing Digital</p>
                     <ul class="cv-contact">
-                        <li>📍 Bordeaux</li>
-                        <li>✉️ maxime@gmail.com</li>
-                        <li>📞 06 12 34 56 78</li>
+                        <li> <a href="https://www.google.com/maps" target="_blank">📍 Bordeaux</a></li>
+                        <li><a href="mailto:maxi.gauthier112@gmail.com">✉️ maxime@gmail.com</a></li>
+                        <li><a href="tel:0612345678">📞 06 12 34 56 78</a></li>
                         <li>🚗 Permis B</li>
                     </ul>
                 </div>
@@ -33,20 +35,65 @@
         </header>
         <div class="cv-body">
             <aside class="cv-sidebar">
-                <section class="bloc competences">
+                <section class="bloc-competences">
                     <h2>Compétences</h2>
+                    <hr>
                     <ul>
-                        <li>HTML / CSS / JS</li>
-                        <li>Google Analytics (GA4)</li>
-                        <li>Google Ads Search</li>
-                        <li>Canva</li>
-                        <li>Pack Office</li>
-                        <li>Réseaux sociaux</li>
+                        <li><span class="skill-name">HTML</span>
+                            <span class="stars">★★☆☆☆</span>
+                        </li>
+                        <li><span class="skill-name">CSS</span>
+                            <span class="stars">★★☆☆☆</span>
+                        </li>
+                        <li><span class="skill-name">JS</span>
+                            <span class="stars">★☆☆☆☆</span>
+                        </li>
+                        <li><span class="skill-name">Google Analytics (GA4)</span>
+                            <span class="stars">★★★☆☆</span>
+                        </li>
+                        <li><span class="skill-name">Google Ads Search</span>
+                            <span class="stars">★★★☆☆</span>
+                        </li>
+                        <li><span class="skill-name">Canva</span>
+                            <span class="stars">★★★★★</span>
+                        </li>
                     </ul>
                 </section>
 
-                <section class="bloc qualites">
+                <section class="bloc-langues">
+                    <h2>Langues</h2>
+                    <hr>
+                    <ul>
+                        <li>
+                            <span class="lang-name">Français</span>
+                            <span class="lang-level">Langue maternelle</span>
+                        </li>
+                        <li>
+                            <span class="lang-name">Anglais</span>
+                            <span class="lang-level">Professionnel (C1)</span>
+                        </li>
+                        <li>
+                            <span class="lang-name">Espagnol</span>
+                            <span class="lang-level">Notions</span>
+                        </li>
+                    </ul>
+                </section>
+
+
+                <section class="bloc-interets">
+                    <h2>Centres d'intérêt</h2>
+                    <hr>
+                    <ul>
+                        <li>Technologies</li>
+                        <li>Sports</li>
+                        <li>Jeux vidéos</li>
+                        <li>Voyages</li>
+                    </ul>
+                </section>
+
+                <section class="bloc-qualites">
                     <h2>Qualités</h2>
+                    <hr>
                     <ul>
                         <li>Curieux</li>
                         <li>Bon relationnel</li>
@@ -59,49 +106,66 @@
                     </ul>
                 </section>
 
-                <section class="bloc langues">
-                    <h2>Langues</h2>
-                    <ul>
-                        <li>Français : Langue maternelle</li>
-                        <li>Anglais : C1</li>
-                    </ul>
-                </section>
             </aside>
-            <section class="cv-content">
-                <section class="bloc profil">
+            <div class="cv-content">
+                <section class="bloc-profil">
                     <h2>Profil</h2>
+                    <hr>
                     <p>Formé au digital et passionné de conception web, je développe des solutions simples, pertinentes
-                        et
-                        orientées
-                        utilisateurs.</p>
+                        et orientées utilisateurs.</p>
+                    <p>Mon expérience en marketing digital m'a permis d'acquérir une vision globale des enjeux, je
+                        souhaite
+                        aujourd'hui me spécialiser dans le développement web afin de créer des sites ou applications
+                        performant(e)s et
+                        adapté(e)s aux besoins des clients.</p>
                 </section>
 
-                <section class="bloc formations">
+                <section class="bloc-formations">
                     <h2>Formations</h2>
-                    <article>
-                        <h3>Formation Web Développeur</h3>
-                        <p>Centre Européen de Formation - 2025 / 2026</p>
-                    </article>
-                    <article>
-                        <h3>Mastère Digital Business</h3>
-                        <p>Euridis Business School - 2022 / 2024</p>
-                    </article>
-                    <article>
-                        <h3>Bachelor Marketing Digital</h3>
-                        <p>Euridis Business School - 2021 / 2022</p>
-                    </article>
-                    <article>
-                        <h3>DUT Techniques de Commercialisation</h3>
-                        <p>Académie de Bordeaux - 2020 / 2021</p>
-                    </article>
+                    <hr>
+                    <div class="formation-item">
+                        <div class="formation-header">
+                            <span class="formation-title">Formation Web Développeur</span>
+                            <span class="formation-date">Octobre 2025 / Mai 2026</span>
+                        </div>
+                        <span class="formation-location">Centre Européen de Formation</span>
+                    </div>
+                    <div class="formation-item">
+                        <div class="formation-header">
+                            <span class="formation-title">Mastère Digital Business</span>
+                            <span class="formation-date">2021 / 2024</span>
+                        </div>
+                        <span class="formation-location">Euridis Business School</span>
+                    </div>
+                    <div class="formation-item">
+                        <div class="formation-header">
+                            <span class="formation-title">Bachelor Marketing Digital</span>
+                            <span class="formation-date">2021 / 2022</span>
+                        </div>
+                        <span class="formation-location">Euridis Business School</span>
+                    </div>
+                    <div class="formation-item">
+                        <div class="formation-header">
+                            <span class="formation-title">DUT Techniques de Commercialisation</span>
+                            <span class="formation-date">2020 / 2021</span>
+                        </div>
+                        <span class="formation-location">Académie de Bordeaux</span>
+                    </div>
                 </section>
 
-                <section class="bloc experiences">
+                <section class="bloc-experiences">
                     <h2>Expérience professionnelle</h2>
-                    <article>
-                        <h3>Chargé de communication, événementiel & B2B</h3>
-                        <p>Biltoki - 2021 / 2024</p>
-                        <ul>
+                    <hr>
+
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <span class="experience-title">Chargé de communication, événementiel & B2B</span>
+                            <span class="experience-date">Décembre 2021 / Octobre 2024</span>
+                        </div>
+
+                        <span class="experience-location">Biltoki</span>
+
+                        <ul class="experience-tasks">
                             <li>Animation de 2 comptes sur les réseaux sociaux</li>
                             <li>Création et organisation d'événements</li>
                             <li>Création d'éléments graphiques dédiés</li>
@@ -109,31 +173,61 @@
                             <li>Suivi de KPI et ajustement de stratégie</li>
                             <li>Gestion de prestations B2B</li>
                         </ul>
-                    </article>
-                    <h3>Chargé des relations entreprises</h3>
-                    <p>Euridis Business School - 2021 / 2021</p>
-                    <ul>
-                        <li>Prospection, qualification de leads, négociation, fidélisation, élevage de grands comptes
-                        </li>
-                        <li>Organisation de Job Dating</li>
-                        <li>Développement stratégie commerciale</li>
-                        <li>Conseil aux entreprises sur les montages financiers</li>
-                        <li>Marketing Digital
-                    </ul>
 
-                    <h3>Assistant Manager - Boulanger - 2021 / 2021</h3>
-                    <ul>
-                        <li>Marketing du point de vente</li>
-                        <li>Merchandising</li>
-                        <li>Vente</li>
-                        <li>Conseil clientèle</li>
-                    </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <span class="experience-title">Chargé des relations entreprises</span>
+                            <span class="experience-date">Septembre 2021 / Décembre 2021</span>
+                        </div>
+                        <span class="experience-location">Euridis Business School</span>
+
+                        <ul class="experience-tasks">
+                            <li>Prospection, qualification de leads, négociation, fidélisation, élevage de grands
+                                comptes
+                            </li>
+                            <li>Organisation de Job Dating</li>
+                            <li>Développement stratégie commerciale</li>
+                            <li>Conseil aux entreprises sur les montages financiers</li>
+                            <li>Marketing Digital</li>
+                        </ul>
+                    </div>
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <span class="experience-title">Assistant Manager</span>
+                            <span class="experience-date">Avril 2021 / Juin 2021</span>
+                        </div>
+                        <span class="experience-location">Boulanger</span>
+                        <ul class="experience-tasks">
+                            <li>Marketing du point de vente</li>
+                            <li>Merchandising</li>
+                            <li>Vente</li>
+                            <li>Conseil clientèle</li>
+                        </ul>
+                    </div>
                 </section>
-            </section>
+            </div>
 
         </div>
 
+        <footer class="cv-footer">
+            <div class="footer-icons">
+                <a href="https://www.linkedin.com/in/maxime-gauthiiier/" target="_blank">
+                    <img src="img/iconLinkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/DaYSyDJiK/Cv-Maxime-github" target="_blank">
+                    <img src="img/iconGithub.png" alt="GitHub">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="img/iconInstagram.png" alt="Instagram">
+                </a>
+            </div>
+    
+            <p class="footer-update">Mis à jour le 10/12/2025</p>
+        </footer>
     </main>
+    
 </body>
 
 </html>
