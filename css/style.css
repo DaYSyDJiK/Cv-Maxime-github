@@ -259,16 +259,27 @@ h2 {
     align-items: center;
 }
 
-.bloc-formations .formation-header + .formation-header {
-    margin-top: 30px;
+.bloc-formations .formation-item + .formation-item {
+    margin-top: 20px;
 }
 
-.bloc-formations .formation-title {
+/* .bloc-formations .formation-header {
+    margin-top: 20px;
+} */
+
+.cv-content .bloc-formations .formation-title {
     font-weight: 700;   
 }
 
-.bloc-formations .formation-date {
-    color: #17abb3;      
+.cv-content .bloc-formations .formation-date {
+    color: #17abb3; 
+    font-weight: 500;     
+}
+
+.cv-content .bloc-formations .formation-location {
+    margin-bottom: 6px;
+    color: #17abb3;
+    font-size: 0.9rem;
 }
 
 .cv-content .bloc-experiences .experience-header {
@@ -283,7 +294,7 @@ h2 {
 }
 
 .cv-content .bloc-experiences .experience-date {
-    font-weight: 600;
+    font-weight: 500;
     color: #17abb3; 
 }
 
@@ -319,4 +330,34 @@ h2 {
 
 .cv-content .bloc-experiences .experience-item + .experience-item {
     margin-top: 20px; 
+}
+
+/* Effets hoover */
+
+/* Effet n°1 : formations / stages / expériences */
+.cv-content .bloc-experiences .experience-item {
+    padding: 8px 12px;
+    border-left: 4px solid transparent;
+    border-radius: 4px;
+    transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+
+/* Effet hover */
+.cv-content .bloc-experiences .experience-item:hover {
+    background-color: #e3e3e3;
+    border-color: #17abb3;
+    cursor: pointer;
+}
+
+.cv-content .bloc-formations .formation-item {
+    padding: 8px 12px;
+    border-left: 4px solid transparent;
+    border-radius: 4px;
+    transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.cv-content .bloc-formations .formation-item:hover {
+    background-color: #e3e3e3;
+    border-color: #17abb3;
+    cursor: pointer;
 }
