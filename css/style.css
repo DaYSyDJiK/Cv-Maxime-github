@@ -376,3 +376,38 @@ h2 {
     border-color: #17abb3;
     cursor: pointer;
 }
+
+.cv-footer {
+    background-color: #17abb3;       
+    padding: 25px 0 15px 0;
+    text-align: center;
+    margin-top: 40px;
+    color: white;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;                      
+    margin-bottom: 10px;
+}
+
+.footer-icons img {
+    width: 30px;
+    height: 30px;
+    filter: invert(100%);              
+    opacity: 0.9;
+    transition: opacity 0.2s ease;
+    cursor: pointer;
+}
+
+/* effet n°3 */
+.footer-icons img:hover {
+    opacity: 0.7;                      
+}
+
+.footer-update {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
