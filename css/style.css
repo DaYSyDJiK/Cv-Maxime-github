@@ -133,6 +133,9 @@ h2 {
     opacity: 0.2;
 }
 
+
+/* Partie de gauche */
+
 .cv-sidebar {
     width: 30%;
     background-color: #e3e3e3;
@@ -233,8 +236,87 @@ h2 {
 
 .cv-sidebar hr {
     border: none;
-    border-top: 1px solid #333333; /* turquoise de ta palette */
-    width: 100%;                   /* barre courte sous le titre */
+    border-top: 1px solid #333333; 
+    width: 100%;                   
     margin: 6px 0 12px;
     opacity: 0.2;
+}
+
+/* Partie de droite */
+
+.bloc-profil p {
+    text-align: justify;      
+    margin-left: 10px;        
+    margin-right: 10px;
+    line-height: 1.4;         
+    font-size: 0.95rem;       
+    text-indent: 15px;
+}
+
+.bloc-formations .formation-header {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+}
+
+.bloc-formations .formation-header + .formation-header {
+    margin-top: 30px;
+}
+
+.bloc-formations .formation-title {
+    font-weight: 700;   
+}
+
+.bloc-formations .formation-date {
+    color: #17abb3;      
+}
+
+.cv-content .bloc-experiences .experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 4px;
+}
+
+.cv-content .bloc-experiences .experience-title {
+    font-weight: 600;
+}
+
+.cv-content .bloc-experiences .experience-date {
+    font-weight: 600;
+    color: #17abb3; 
+}
+
+.cv-content .bloc-experiences .experience-location {
+    margin-bottom: 6px;
+    color: #17abb3;
+    font-size: 0.9rem;
+}
+
+.cv-content .bloc-experiences .experience-tasks {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cv-content .bloc-experiences .experience-tasks li {
+    position: relative;
+    padding-left: 16px;
+    margin-bottom: 6px; 
+    font-size: 0.8rem;
+}
+
+
+.cv-content .bloc-experiences .experience-tasks li::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #17abb3;
+    position: absolute;
+    left: 0;
+    top: 6px;
+}
+
+.cv-content .bloc-experiences .experience-item + .experience-item {
+    margin-top: 20px; 
 }
