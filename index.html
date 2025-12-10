@@ -16,16 +16,18 @@
             <div class="cv-header-inner">
 
                 <div class="cv-photo">
-                    <img src="./img/PhotoCV.jpg" alt="Photo de Maxime Gauthier">
+                    <a href="img/PhotoCV.jpg" target="_blank">
+                        <img src="img/PhotoCV.jpg" alt="Photo de Maxime Gauthier">
+                    </a>
                 </div>
 
                 <div class="cv-identity">
                     <h1>Maxime Gauthier</h1>
                     <p class="cv-title">Développeur Web & Marketing Digital</p>
                     <ul class="cv-contact">
-                        <li>📍 Bordeaux</li>
-                        <li>✉️ maxime@gmail.com</li>
-                        <li>📞 06 12 34 56 78</li>
+                        <li> <a href="https://www.google.com/maps" target="_blank">📍 Bordeaux</a></li>
+                        <li><a href="mailto:maxi.gauthier112@gmail.com">✉️ maxime@gmail.com</a></li>
+                        <li><a href="tel:0612345678">📞 06 12 34 56 78</a></li>
                         <li>🚗 Permis B</li>
                     </ul>
                 </div>
@@ -105,7 +107,7 @@
                 </section>
 
             </aside>
-            <section class="cv-content">
+            <div class="cv-content">
                 <section class="bloc-profil">
                     <h2>Profil</h2>
                     <hr>
@@ -121,33 +123,41 @@
                 <section class="bloc-formations">
                     <h2>Formations</h2>
                     <hr>
-                    <article class="formation-header">
-                        <span class="formation-title">Formation Web Développeur</span>
-                        <span class="formation-date">Octobre 2025 / Mai 2026</span>
-                    </article>
-                    Centre Européen de Formation
-                    <article class="formation-header">
-                        <span class="formation-title">Mastère Digital Business</span>
-                        <span class="formation-date">2021 / 2024</span>
-                    </article>
-                    Euridis Business School
-                    <article class="formation-header">
-                        <span class="formation-title">Bachelor Marketing Digital</span>
-                        <span class="formation-date">2021 / 2022</span>
-                    </article>
-                    Euridis Business School
-                    <article class="formation-header">
-                        <span class="formation-title">DUT Techniques de Commercialisation</span>
-                        <span class="formation-date">2020 / 2021</span>
-                    </article>
-                    Académie de Bordeaux
+                    <div class="formation-item">
+                        <div class="formation-header">
+                            <span class="formation-title">Formation Web Développeur</span>
+                            <span class="formation-date">Octobre 2025 / Mai 2026</span>
+                        </div>
+                        <span class="formation-location">Centre Européen de Formation</span>
+                    </div>
+                    <div class="formation-item">
+                        <div class="formation-header">
+                            <span class="formation-title">Mastère Digital Business</span>
+                            <span class="formation-date">2021 / 2024</span>
+                        </div>
+                        <span class="formation-location">Euridis Business School</span>
+                    </div>
+                    <div class="formation-item">
+                        <div class="formation-header">
+                            <span class="formation-title">Bachelor Marketing Digital</span>
+                            <span class="formation-date">2021 / 2022</span>
+                        </div>
+                        <span class="formation-location">Euridis Business School</span>
+                    </div>
+                    <div class="formation-item">
+                        <div class="formation-header">
+                            <span class="formation-title">DUT Techniques de Commercialisation</span>
+                            <span class="formation-date">2020 / 2021</span>
+                        </div>
+                        <span class="formation-location">Académie de Bordeaux</span>
+                    </div>
                 </section>
 
                 <section class="bloc-experiences">
                     <h2>Expérience professionnelle</h2>
                     <hr>
 
-                    <article class="experience-item">
+                    <div class="experience-item">
                         <div class="experience-header">
                             <span class="experience-title">Chargé de communication, événementiel & B2B</span>
                             <span class="experience-date">Décembre 2021 / Octobre 2024</span>
@@ -164,9 +174,9 @@
                             <li>Gestion de prestations B2B</li>
                         </ul>
 
-                    </article>
+                    </div>
 
-                    <article class="experience-item">
+                    <div class="experience-item">
                         <div class="experience-header">
                             <span class="experience-title">Chargé des relations entreprises</span>
                             <span class="experience-date">Septembre 2021 / Décembre 2021</span>
@@ -180,10 +190,10 @@
                             <li>Organisation de Job Dating</li>
                             <li>Développement stratégie commerciale</li>
                             <li>Conseil aux entreprises sur les montages financiers</li>
-                            <li>Marketing Digital
+                            <li>Marketing Digital</li>
                         </ul>
-                    </article>
-                    <article class="experience-item">
+                    </div>
+                    <div class="experience-item">
                         <div class="experience-header">
                             <span class="experience-title">Assistant Manager</span>
                             <span class="experience-date">Avril 2021 / Juin 2021</span>
@@ -195,13 +205,29 @@
                             <li>Vente</li>
                             <li>Conseil clientèle</li>
                         </ul>
-                    </article>
+                    </div>
                 </section>
-            </section>
+            </div>
 
         </div>
 
     </main>
+
+    <footer class="cv-footer">
+        <div class="footer-icons">
+            <a href="https://www.linkedin.com/in/maxime-gauthiiier/" target="_blank">
+                <img src="img/iconLinkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/DaYSyDJiK/Cv-Maxime-github" target="_blank">
+                <img src="img/iconGithub.png" alt="GitHub">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="img/iconInstagram.png" alt="Instagram">
+            </a>
+        </div>
+
+        <p class="footer-update">Mis à jour le 10/12/2025</p>
+    </footer>
 </body>
 
 </html>
